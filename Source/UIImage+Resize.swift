@@ -34,7 +34,7 @@ public extension UIImage {
         
         let croppedImage = resizedImage.croppedImage(cropRect)
         let transparentBorderImage = borderSize != 0 ? croppedImage.transparentBorderImage(borderSize) : croppedImage
-        
+
         return transparentBorderImage.roundedCornerImage(cornerSize: cornerRadius, borderSize: borderSize)
     }
     
